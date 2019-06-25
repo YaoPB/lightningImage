@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".MainActivity">
+	
+	<Button
+		android:id="@+id/load_one"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="load_one"
+		tools:ignore="MissingConstraints" />
+	
+	<Button
+		android:id="@+id/load_more"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="load_more"
+		tools:ignore="MissingConstraints" />
+	
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		
+		tools:ignore="MissingConstraints">
+		
+		<LinearLayout
+			android:id="@+id/contaier"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:divider="@drawable/lalala"
+			android:dividerPadding="20dp"
+			android:orientation="vertical"
+			android:showDividers="middle"></LinearLayout>
+	</ScrollView>
+
+</LinearLayout>
